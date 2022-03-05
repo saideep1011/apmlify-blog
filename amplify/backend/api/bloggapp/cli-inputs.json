@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "bloggapp",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/home/saideep/Videos/projects/bloggapp/amplify/backend/api/bloggapp/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}

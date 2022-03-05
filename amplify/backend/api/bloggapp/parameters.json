@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "bloggapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}
