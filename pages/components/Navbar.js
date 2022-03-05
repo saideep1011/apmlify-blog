@@ -8,7 +8,9 @@ const NavBar = () => {
   useEffect(() => {
     authListener();
   }, []);
-
+//   GraphQL endpoint: https://dbtc7oza2ncurmpkpatkvtquba.appsync-api.ap-south-1.amazonaws.com/graphql
+//   GraphQL API KEY: da2-ikhozlbdibcyza5tq3os6bylja
+  
   async function authListener() {
     Hub.listen("auth", (data) => {
       switch (data.payload.event) {
@@ -36,7 +38,7 @@ const NavBar = () => {
           </a>
         </Link>
       ))}
-      {!signedUser && (
+      {signedUser && (
         <Link href="/my-posts">
           <a className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slage-100 hover:text-slate-900">
             My posts
