@@ -22,7 +22,7 @@ export default function Home() {
     <div>
       <h1>my posts</h1>
      {posts.map((post,index) =>(
-       <p key={post.id}>{post.title}</p>
+       <p key={post.id}>{post.content}</p>
      ))}
     </div>
   );
